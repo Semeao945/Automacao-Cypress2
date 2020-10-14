@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-28T15:43:33.106Z",
+    "end": "2020-09-28T15:44:24.994Z",
+    "duration": 51888,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1b34c97-f9d8-4ac8-8d9f-4f2717b894a8",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.feature",
+      "file": "cypress\\integration\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "12524ce2-d1f6-4805-8838-35f9680e7f73",
+          "title": "Validar Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher login e senha",
+              "fullTitle": "Validar Login Preencher login e senha",
+              "timedOut": null,
+              "duration": 51455,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Ops! Dispositivo não reconhecido.' within the element: <div.css-901oao.r-1tchu24.r-bvisft.r-1i10wst.r-vw2c0b.r-ku1wi2.r-q4m81j> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Ops! Dispositivo não reconhecido.' within the element: <div.css-901oao.r-1tchu24.r-bvisft.r-1i10wst.r-vw2c0b.r-ku1wi2.r-q4m81j> but never did.\n    at LoginPage.Validartexto (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:138:51)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:174:13)\n    at Context.resolveAndRunStepDefinition (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:10587:9)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:9929:35)",
+                "diff": null
+              },
+              "uuid": "eece3277-ca35-4616-88c1-c49b8f8460ab",
+              "parentUUID": "12524ce2-d1f6-4805-8838-35f9680e7f73",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "eece3277-ca35-4616-88c1-c49b8f8460ab"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 51455,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

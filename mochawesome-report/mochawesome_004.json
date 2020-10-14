@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-28T15:06:00.461Z",
+    "end": "2020-09-28T15:06:19.683Z",
+    "duration": 19222,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96d9569f-c989-4154-bb1c-61b291a81210",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.feature",
+      "file": "cypress\\integration\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "49d2d6c4-82fe-4d40-86b6-633c26ac6a92",
+          "title": "Validar Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Preencher login e senha",
+              "fullTitle": "Validar Login Preencher login e senha",
+              "timedOut": null,
+              "duration": 18925,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.wait()` could not find a registered alias for: `@`.\nYou have not aliased anything yet.",
+                "estack": "CypressError: `cy.wait()` could not find a registered alias for: `@`.\nYou have not aliased anything yet.\n    at $Cy.aliasNotFoundFor (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:150289:22)\n    at waitForXhr (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:159968:12)\n    at https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:160054:14\n    at tryCatcher (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:10325:23)\n    at MappingPromiseArray._promiseFulfilled (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:7445:38)\n    at MappingPromiseArray.PromiseArray._iterate (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:8647:31)\n    at MappingPromiseArray.init (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:8611:10)\n    at MappingPromiseArray._asyncInit (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:7414:10)\n    at _drainQueueStep (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:5036:12)\n    at _drainQueue (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (https://banking-h.crefisa.com.br/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at LoginPage.preencherSenhadigital (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:133:10)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:167:13)\n    at Context.resolveAndRunStepDefinition (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:10581:9)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:9923:35)\nFrom Your Spec Code:\n    at LoginPage.preencherSenhadigital (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:133:10)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:167:13)\n    at Context.resolveAndRunStepDefinition (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:10581:9)\n    at Context.eval (https://banking-h.crefisa.com.br/__cypress/tests?p=cypress\\integration\\login.feature:9923:35)",
+                "diff": null
+              },
+              "uuid": "63e9e939-4181-4db3-81be-dd0a1adc6012",
+              "parentUUID": "49d2d6c4-82fe-4d40-86b6-633c26ac6a92",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "63e9e939-4181-4db3-81be-dd0a1adc6012"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18925,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

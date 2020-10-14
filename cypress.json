@@ -1,0 +1,14 @@
+{
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "defaultCommandTimeout": 10000,
+    "baseUrl": "https://banking-h.crefisa.com.br/pj/",
+    "video": true,
+    "videoCompression": 32,
+    "videoUploadOnPasses": true,
+
+    "reporter": "mochawesome",
+   "reporterOptions": {
+        "overwrite": false
+   } 
+}
